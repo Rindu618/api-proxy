@@ -1,0 +1,10 @@
+{
+  "rewrites": [
+    { "source": "/v1/(.*)", "destination": "/api/proxy" }
+  ],
+  "functions": {
+    "api/proxy.js": {
+      "includeFiles": "proxy.js"
+    }
+  }
+}
